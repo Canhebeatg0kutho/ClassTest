@@ -46,12 +46,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeTestFail.testGenderFail">
-    <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EmployeeTestFail.testAgeFail">
+    <configuration name="EmployeeTestFail.testAgeFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClassTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployeeTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeTestFail" />
+      <option name="METHOD_NAME" value="testAgeFail" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,11 +99,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeTestFail.testAgeFail" />
         <item itemvalue="JUnit.EmployeeTestFail.testGenderFail" />
         <item itemvalue="JUnit.EmployeeTestFail.testEmploymentFail" />
         <item itemvalue="JUnit.EmployeeTestFail.testPpsFail" />
         <item itemvalue="JUnit.EmployeeTestFail.testNameFail" />
-        <item itemvalue="JUnit.EmployeeTest" />
       </list>
     </recent_temporary>
   </component>

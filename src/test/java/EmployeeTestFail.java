@@ -14,7 +14,7 @@ class EmployeeTestFail {
     void setUp() {
 
 
-//        employees.add(new Employee("Bob","12345679801","Freelance","RonaldoSexual",19));
+
 //        employees.add(new Employee("Bob","12345679801","Freelance","Non-Binary",11));
     }
     @Test
@@ -42,6 +42,15 @@ class EmployeeTestFail {
     void testGenderFail(){
         Exception genMsg = assertThrows(IllegalArgumentException.class,() ->{new Employee("Bob","12345679801","Full-time","RonaldoSexual",19);});
         assertEquals("This is not a gender",genMsg.getMessage());
+    }
+
+    @Test
+    void testAgeFail(){
+        Exception ageLowMsg = assertThrows(IllegalArgumentException.class,() ->{new Employee("Bob","12345679801","Contract","Non-Binary",11);});
+        assertEquals("Age must be over 16",ageLowMsg.getMessage());
+
+        Exception ageHighMsg = assertThrows(IllegalArgumentException.class,() ->{new Employee("Bob","12345679801","Contract","Non-Binary",80);});
+        assertEquals("Age must be under 66",ageHighMsg.getMessage());
     }
 
     @AfterEach
