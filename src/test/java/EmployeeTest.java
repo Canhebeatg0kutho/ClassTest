@@ -32,7 +32,16 @@ class EmployeeTest {
     }
 
     @Test
-     void test
+     void testGenderPass(){
+        assertEquals("Man",employees.get(0).getGender());
+        assertEquals("Woman",employees.get(1).getGender());
+        assertEquals("Non-Binary",employees.get(2).getGender());
+    }
+
+    @Test
+    void testAgePass(){
+        assertEquals(22,employees.get(1).getAge());
+    }
 
     @org.junit.jupiter.api.AfterEach
     void tearDown() {
