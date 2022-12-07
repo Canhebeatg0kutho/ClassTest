@@ -13,7 +13,6 @@ class EmployeeTestFail {
     @BeforeEach
     void setUp() {
 
-//        employees.add(new Employee("Shauna","9876543210","Full-time","Woman",22));
 //        employees.add(new Employee("Bob","12345679801","Freelance","Non-Binary",19));
 //        employees.add(new Employee("Bob","12345679801","Freelance","RonaldoSexual",19));
 //        employees.add(new Employee("Bob","12345679801","Freelance","Non-Binary",11));
@@ -31,6 +30,12 @@ class EmployeeTestFail {
     void testPpsFail(){
         Exception idMsg = assertThrows(IllegalArgumentException.class,() ->{new Employee("Shauna","9876543210","Full-time","Woman",22);});
         assertEquals("This is not a valid PPS number",idMsg.getMessage());
+    }
+
+    @Test
+    void testEmploymentFail(){
+        Exception empMsg = assertThrows(IllegalArgumentException.class,() ->{new Employee("Bob","12345679801","Freelance","Non-Binary",19);});
+        assertEquals("This is an invalid employment type",empMsg.getMessage());
     }
 
     @AfterEach
