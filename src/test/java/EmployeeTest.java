@@ -3,10 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 class EmployeeTest {
-   private Employee employee;
     ArrayList<Employee> employees = new ArrayList<Employee>();
-
-
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
         employees.add(new Employee("Richard","12345678912","Contract","Man",66));

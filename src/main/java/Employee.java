@@ -18,10 +18,15 @@ public class Employee {
     }
 
     public void setName(String name) {
-        if(name.length()<3 && name.length()>25)
+        if(name.length()<3 )
         {
-            throw new IllegalArgumentException("Your name is too short");
-        }else{
+            throw new IllegalArgumentException("Your name must be at least 3 characters");
+        }
+        else if( name.length()>25)
+        {
+            throw new IllegalArgumentException("Your name cannot be longer than 25 characters");
+        }
+        else{
             this.name = name;
 
         }
