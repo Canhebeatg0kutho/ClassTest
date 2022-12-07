@@ -13,7 +13,7 @@ class EmployeeTestFail {
     @BeforeEach
     void setUp() {
 
-//        employees.add(new Employee("Bob","12345679801","Freelance","Non-Binary",19));
+
 //        employees.add(new Employee("Bob","12345679801","Freelance","RonaldoSexual",19));
 //        employees.add(new Employee("Bob","12345679801","Freelance","Non-Binary",11));
     }
@@ -36,6 +36,12 @@ class EmployeeTestFail {
     void testEmploymentFail(){
         Exception empMsg = assertThrows(IllegalArgumentException.class,() ->{new Employee("Bob","12345679801","Freelance","Non-Binary",19);});
         assertEquals("This is an invalid employment type",empMsg.getMessage());
+    }
+
+    @Test
+    void testGenderFail(){
+        Exception genMsg = assertThrows(IllegalArgumentException.class,() ->{new Employee("Bob","12345679801","Full-time","RonaldoSexual",19);});
+        assertEquals("This is not a gender",genMsg.getMessage());
     }
 
     @AfterEach
