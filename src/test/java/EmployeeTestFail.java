@@ -8,14 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class EmployeeTestFail {
 
-    ArrayList<Employee> employees = new ArrayList<Employee>();
-
     @BeforeEach
     void setUp() {
-
-
-
-//        employees.add(new Employee("Bob","12345679801","Freelance","Non-Binary",11));
     }
     @Test
     void testNameFail(){

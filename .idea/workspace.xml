@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c7eb071-04f4-4c4f-9565-825304ffb9bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EmployeeTestFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployeeTestFail.java" afterDir="false" />
-    </list>
+    <list default="true" id="0c7eb071-04f4-4c4f-9565-825304ffb9bf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +43,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeTestFail.testAgeFail">
+  <component name="RunManager" selected="JUnit.EmployeeTestFail">
+    <configuration name="EmployeeTestFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClassTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeTestFail" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmployeeTestFail.testAgeFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClassTest" />
       <option name="PACKAGE_NAME" value="" />
@@ -77,21 +83,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeTestFail.testNameFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeTest.testEmploymentPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClassTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployeeTestFail" />
-      <option name="METHOD_NAME" value="testNameFail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeTestFail.testPpsFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ClassTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployeeTestFail" />
-      <option name="METHOD_NAME" value="testPpsFail" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeTest" />
+      <option name="METHOD_NAME" value="testEmploymentPass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,11 +95,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeTestFail" />
+        <item itemvalue="JUnit.EmployeeTest.testEmploymentPass" />
         <item itemvalue="JUnit.EmployeeTestFail.testAgeFail" />
         <item itemvalue="JUnit.EmployeeTestFail.testGenderFail" />
         <item itemvalue="JUnit.EmployeeTestFail.testEmploymentFail" />
-        <item itemvalue="JUnit.EmployeeTestFail.testPpsFail" />
-        <item itemvalue="JUnit.EmployeeTestFail.testNameFail" />
       </list>
     </recent_temporary>
   </component>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Employee.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ClassTest</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Employee.java</span></div><h1>Employee.java</h1><pre class="source lang-java linenums">public class Employee {
+    private String name;
+    private String id;
+    private String employment;
+    private String gender;
+    private int age;
+
+<span class="fc" id="L8">    public Employee(String name, String id, String employment, String gender, int age) {</span>
+<span class="fc" id="L9">        setName(name);</span>
+<span class="fc" id="L10">        setId(id);</span>
+<span class="fc" id="L11">        setEmployment(employment);</span>
+<span class="fc" id="L12">        setGender(gender);</span>
+<span class="fc" id="L13">        setAge(age);</span>
+<span class="fc" id="L14">    }</span>
+
+    public String getName() {
+<span class="fc" id="L17">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="pc bpc" id="L21" title="1 of 2 branches missed.">        if(name.length()&lt;3 )</span>
+        {
+<span class="nc" id="L23">            throw new IllegalArgumentException(&quot;Your name must be at least 3 characters&quot;);</span>
+        }
+<span class="pc bpc" id="L25" title="1 of 2 branches missed.">        else if( name.length()&gt;25)</span>
+        {
+<span class="nc" id="L27">            throw new IllegalArgumentException(&quot;Your name cannot be longer than 25 characters&quot;);</span>
+        }
+        else{
+<span class="fc" id="L30">            this.name = name;</span>
+
+        }
+<span class="fc" id="L33">    }</span>
+
+    public String getId() {
+<span class="fc" id="L36">        return id;</span>
+    }
+
+    public void setId(String id) {
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">        if(id.length()!=11)</span>
+        {
+<span class="nc" id="L42">            throw new IllegalArgumentException(&quot;This is not a valid PPS number&quot;);</span>
+        }else{
+<span class="fc" id="L44">            this.id = id;</span>
+        }
+<span class="fc" id="L46">    }</span>
+
+    public String getEmployment() {
+<span class="fc" id="L49">        return employment;</span>
+    }
+
+    public void setEmployment(String employment) {
+<span class="pc bpc" id="L53" title="1 of 2 branches missed.">        switch (employment){</span>
+            case &quot;Full-time&quot;:
+            case &quot;Part-time&quot;:
+<span class="fc" id="L56">            case &quot;Contract&quot;: this.employment = employment;break;</span>
+<span class="nc" id="L57">            default: throw new IllegalArgumentException(&quot;This is an invalid employment type&quot;);</span>
+        }
+
+<span class="fc" id="L60">    }</span>
+
+    public String getGender() {
+<span class="fc" id="L63">        return gender;</span>
+    }
+
+    public void setGender(String gender) {
+<span class="pc bpc" id="L67" title="1 of 2 branches missed.">        switch(gender){</span>
+            case &quot;Man&quot;:
+            case &quot;Woman&quot;:
+<span class="fc" id="L70">            case &quot;Non-Binary&quot;: this.gender = gender;break;</span>
+<span class="nc" id="L71">            default: throw new IllegalArgumentException(&quot;This is not a gender&quot;);</span>
+        }
+<span class="fc" id="L73">    }</span>
+
+    public int getAge() {
+<span class="fc" id="L76">        return age;</span>
+    }
+
+    public void setAge(int age) {
+<span class="pc bpc" id="L80" title="1 of 2 branches missed.">        if(age&lt;16){</span>
+<span class="nc" id="L81">            throw new IllegalArgumentException(&quot;Age must be over 16&quot;);</span>
+        }
+<span class="pc bpc" id="L83" title="1 of 2 branches missed.">        else if(age&gt;66){</span>
+<span class="nc" id="L84">            throw new IllegalArgumentException(&quot;Age must be under 66&quot;);</span>
+        } else {
+<span class="fc" id="L86">            this.age = age;</span>
+        }
+<span class="fc" id="L88">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
