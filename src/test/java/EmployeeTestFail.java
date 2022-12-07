@@ -27,6 +27,12 @@ class EmployeeTestFail {
         assertEquals("Your name cannot be longer than 25 characters",nameLongMsg.getMessage());
     }
 
+    @Test
+    void testPpsFail(){
+        Exception idMsg = assertThrows(IllegalArgumentException.class,() ->{new Employee("Shauna","9876543210","Full-time","Woman",22);});
+        assertEquals("This is not a valid PPS number",idMsg.getMessage());
+    }
+
     @AfterEach
     void tearDown() {
     }

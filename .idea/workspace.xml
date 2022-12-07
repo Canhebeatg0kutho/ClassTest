@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c7eb071-04f4-4c4f-9565-825304ffb9bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/EmployeeTestFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployeeTestFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/EmployeeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/EmployeeTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +45,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeTestFail.testNameFail">
+  <component name="RunManager" selected="JUnit.EmployeeTestFail.testPpsFail">
     <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClassTest" />
       <option name="PACKAGE_NAME" value="" />
@@ -69,21 +65,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeTest.testAgePass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeTestFail.testPpsFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClassTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployeeTest" />
-      <option name="METHOD_NAME" value="testAgePass" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeTestFail" />
+      <option name="METHOD_NAME" value="testPpsFail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeTest.testEmploymentPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeTest.testAgePass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClassTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EmployeeTest" />
-      <option name="METHOD_NAME" value="testEmploymentPass" />
+      <option name="METHOD_NAME" value="testAgePass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,11 +97,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeTestFail.testPpsFail" />
         <item itemvalue="JUnit.EmployeeTestFail.testNameFail" />
         <item itemvalue="JUnit.EmployeeTest" />
         <item itemvalue="JUnit.EmployeeTest.testAgePass" />
         <item itemvalue="JUnit.EmployeeTest.testGenderPass" />
-        <item itemvalue="JUnit.EmployeeTest.testEmploymentPass" />
       </list>
     </recent_temporary>
   </component>
